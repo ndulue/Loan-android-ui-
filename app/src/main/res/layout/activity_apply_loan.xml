@@ -11,13 +11,16 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:paddingBottom="30dp"
+        android:background="@drawable/layout_loan_bg"
         android:layout_height="wrap_content">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_icon"
+        android:padding="10dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/ic_dashboard_black_24dp"/>
 
     <LinearLayout
@@ -25,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:orientation="horizontal">
 
@@ -33,17 +36,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Balance"
-            android:paddingStart="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:background="@drawable/btn_loan_bg_1"
             android:layout_marginEnd="5dp"
-            android:paddingEnd="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
             android:textAllCaps="false"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="10dp"
-            android:layout_marginStart="5dp"
-            android:paddingEnd="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/btn_white_btn"
+            android:textSize="20sp"
+            android:textColor="@color/color_loan_brg"
+            android:textStyle="bold"
             android:text="Transfer"
             android:textAllCaps="false"/>
 
@@ -52,13 +63,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
         android:text="Unpaid loans"
         android:layout_gravity="center_horizontal"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -67,20 +80,23 @@
             android:layout_height="wrap_content"
             android:text="35,880"
             android:textStyle="bold"
-            android:textSize="25sp"/>
+            android:textColor="@android:color/white"
+            android:textSize="35sp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="USD"
+            android:textColor="@android:color/white"
             android:textSize="10dp"
+            android:textStyle="bold"
             android:layout_marginStart="2dp"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -94,11 +110,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_new_releases_black_24dp"/>
+                android:background="@drawable/btn_loan_bg_3"
+                android:padding="15dp"
+                android:src="@drawable/ic_account_balance_wallet_black_24dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
                 android:text="Wallet"/>
 
         </LinearLayout>
@@ -114,12 +136,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_new_releases_black_24dp"/>
+                android:background="@drawable/btn_loan_bg_3"
+                android:padding="15dp"
+                android:src="@drawable/ic_track_changes_black_24dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wallet"/>
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:text="Invest"/>
 
         </LinearLayout>
 
@@ -132,12 +161,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_new_releases_black_24dp"/>
+                android:background="@drawable/btn_loan_bg_2"
+                android:padding="15dp"
+                android:src="@drawable/ic_healing_black_24dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
                 android:layout_height="wrap_content"
-                android:text="Wallet"/>
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="Loan"/>
 
         </LinearLayout>
 
@@ -147,10 +183,14 @@
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_loan_bg_1"
         android:layout_marginStart="20dp"
         android:text="Apply for a loan"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
         android:textAllCaps="false"
-        android:textSize="16sp"
+        android:textSize="18sp"
+        android:padding="15dp"
         android:layout_marginEnd="20dp"/>
 
     <LinearLayout
@@ -164,14 +204,15 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_releases_black_24dp"/>
+            android:src="@drawable/ic_blur_on_black_24dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Scan QR Code and Nearly Friends"
+            android:textColor="@android:color/white"
             android:textSize="17dp"
-            android:layout_marginStart="5dp"/>
+            android:layout_marginStart="15dp"/>
 
     </LinearLayout>
 
@@ -196,13 +237,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:gravity="center_vertical"
             android:layout_alignParentStart="true"
             android:text="History"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_releases_black_24dp"
+            android:background="@drawable/black_bg"
+            android:padding="5dp"
+            android:src="@drawable/ic_search_black_24dp"
             android:layout_alignParentEnd="true"/>
 
     </RelativeLayout>
@@ -210,7 +254,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:layout_height="wrap_content">
 
@@ -222,7 +266,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_new_releases_black_24dp"/>
+                android:background="@drawable/timer_bg"
+                android:padding="5dp"
+                android:src="@drawable/ic_timer_black_24dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -234,13 +280,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/color_loan_brg"
                     android:text="Car Loan"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Next Due:June 17"/>
+                    android:textColor="@color/color_loan_brg"
+                    android:text="Next Due:  June 17"/>
 
 
             </LinearLayout>
@@ -259,6 +307,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:textSize="18dp"
+                android:textColor="@color/color_loan_brg"
                 android:textStyle="bold"
                 android:text="$3588"/>
 
@@ -266,6 +316,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
+                android:textColor="#f44336"
                 android:text="Pending"/>
 
 
@@ -277,14 +328,14 @@
         android:layout_width="wrap_content"
         android:layout_height="2dip"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="7dp"
         android:layout_marginStart="20dp"
         android:background="@color/colorAccent"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="7dp"
         android:layout_marginEnd="20dp"
         android:layout_height="wrap_content">
 
@@ -296,11 +347,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_new_releases_black_24dp"/>
+                android:background="@drawable/check_bg"
+                android:padding="5dp"
+                android:src="@drawable/ic_check_black_24dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="15dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
@@ -308,13 +361,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="Car Loan"/>
+                    android:textSize="18dp"
+                    android:textColor="@color/color_loan_brg"
+                    android:text="House Loan"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Next Due:June 17"/>
+                    android:textColor="@color/color_loan_brg"
+                    android:text="Fully Paid:  June 17"/>
 
 
             </LinearLayout>
@@ -333,20 +388,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:textSize="18dp"
+                android:textColor="@color/color_loan_brg"
                 android:textStyle="bold"
                 android:text="$3588"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="end"
                 android:textStyle="bold"
-                android:text="Pending"/>
+                android:textColor="#4caf50"
+                android:text="Paid"/>
 
 
         </LinearLayout>
 
     </RelativeLayout>
 
-
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/colorAccent"/>
 
 </LinearLayout>
